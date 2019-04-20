@@ -1,0 +1,33 @@
+<ion-view title="Registrazione" id="page6" ng-controller="signupRisCtrl" hide-back-button="false">
+    <ion-content padding="true" class="has-header">
+        <div class="row row-center">
+          <div class="col">
+
+            <div id="signup-form"></div>
+
+            <form>
+              <div class="list">
+                <label class="item item-input">
+                  <input type="text" placeholder="nome" ng-model="data.nome">
+                </label>
+                <label class="item item-input">
+                  <input type="text" placeholder="cognome" ng-model="data.cognome">
+                </label>
+                <label class="item item-input">
+                  <input type="email" placeholder="email" ng-model="data.email">
+                </label>
+                <label class="item item-input">
+                  <input type="password" placeholder="password" ng-model="data.password">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="compagnia" ng-model="data.company">
+                </label>
+              </div>
+
+              <button class="button button-block button-assertive button-login" ng-click="submit()" >Registrati</button>
+            </form>
+
+          </div>
+        </div>
+    </ion-content>
+  </ion-view>

@@ -1,0 +1,36 @@
+<ion-view title="Ristoranti" id="page8" ng-controller="restRisCtrl" hide-back-button="false">
+        <ion-content padding="true" class="has-header">
+          <ion-list id="rests-list2">
+              <ion-item ng-repeat="rest in rests track by $index" align="">
+                  <div class= "row">
+                    <div class = "col">
+                      <b>Ristorante: </b><p>
+                      <b>Luogo: </b><p>
+                      <b>Orario di apertura:  </b><p>
+                      <b>Orario di chiusura: </b><p>
+                      <b>Turno: </b><p>
+                      <b>Email: </b><p>
+                      <b>Telefono: </b><p>
+                      <b>Posti: </b><p>
+
+                    </div>
+                    <div class = "col">
+                    </div>
+                    <div class = "col" align="center">
+                      {{rest.nome}} <p>
+                      {{rest.indirizzo}} <p>
+                      {{rest.orarioapertura}} <p>
+                      {{rest.orariochiusura}} <p>
+                      {{rest.turno}} <p>
+                      {{rest.email}} <p>
+                      {{rest.telefono}} <p>
+                      {{rest.posti}} <p>
+
+
+                    </div>
+                  </div>
+                    <button class="button button-block button-assertive button-login button-small" ng-click="remove(rests, $index)">Elimina</button>
+                </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-view>

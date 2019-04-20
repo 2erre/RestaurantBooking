@@ -1,0 +1,26 @@
+<ion-view title="Login" id="page5" ng-controller="loginRisCtrl" hide-back-button="false">
+    <ion-content padding="true" class="has-header">
+        <div class="row row-center">
+          <div class="col">
+
+            <div id="login-form"></div>
+
+            <form>
+              <div class="list">
+                <label class="item item-input">
+                  <input type="email" placeholder="Email" ng-model="data.email">
+                </label>
+                <label class="item item-input">
+                  <input type="password" placeholder="Password" ng-model="data.password">
+                </label>
+              </div>
+
+              <button class="button button-block button-balanced button-login" ng-click="submit()">Accedi</button>
+              <div align="center"><b>Non sei ancora registrato?</b></div>
+              <button class="button button-block button-assertive button-login" ui-sref="signupris()">Registrati ora</button>
+            </form>
+
+          </div>
+        </div>
+    </ion-content>
+  </ion-view>

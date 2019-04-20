@@ -1,0 +1,173 @@
+<ion-view  title="Lista Ristoranti" id="page4" ng-controller="restsCtrl" hide-back-button="true">
+  <ion-content padding="true" class="has-header">
+
+    <ion-list id="rests-list2">
+      <ion-item ng-repeat="rest in rests track by $index">
+        <div class= "row">
+          <div class = "col">
+            <b>Ristorante: </b><p>
+            <b>Luogo: </b><p>
+            <b>Orario di apertura:  </b><p>
+            <b>Orario di chiusura: </b><p>
+            <b>Turno: </b><p>
+            <b>Email: </b><p>
+            <b>Telefono: </b><p>
+            <b>Posti: </b><p>
+
+
+
+          </div>
+          <div class = "col">
+          </div>
+          <div class = "col" align="center">
+            {{rest.nome}} <p>
+            {{rest.indirizzo}} <p>
+            {{rest.orarioapertura}} <p>
+            {{rest.orariochiusura}} <p>
+            {{rest.turno}} <p>
+            {{rest.email}} <p>
+            {{rest.telefono}} <p>
+            {{rest.posti}} <p>
+
+          </div>
+          </div>
+          <div>
+          <h3>Prenota:</h3>
+            &ensp;
+            &ensp;
+          <label class="item item-input">
+          <select name="giorni" ng-model="data.giorno">
+                  <option value="" selected="selected">GG</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+          </select>
+          </label>
+          <label class="item item-input">
+          <select name="mesi" ng-model="data.mese">
+                  <option value="" selected="selected">MM</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+          </select>
+          </label>
+          <label class="item item-input">
+          <select name="anni" ng-model="data.anno">
+                  <option value="" selected="selected">AAAA</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+          </select>
+          </label>
+
+
+          <label class="item item-input">
+            <select name="turno" ng-model="data.turno">
+                    <option value="" selected="selected">Turno</option>
+                    <option value="pranzo">Pranzo</option>
+                    <option value="cena">Cena</option>
+            </select>
+          </label>
+
+              <label class="item item-input">
+                <select name="posti" ng-model="data.posti">
+                        <option value="" selected="selected">N° Persone</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                </select>
+              </label>
+        </div>
+          <button class="button button-block button-balanced button-login button-small" ng-click="buy()">Prenota</button>
+
+      </ion-item>
+        <button class="button button-block button-assertive button-small" ng-click="logout()">Disconnetti</button>
+    </ion-list>
+  </ion-content>
+</ion-view>
